@@ -1,0 +1,50 @@
+<div class="container">
+  <h1>SignUp</h1>
+  <hr>
+  <br>
+  <label>Email Id</label>
+  <div class="form-group">
+    <input type="email" [(ngModel)]="id" class="form-control">
+  </div>
+  <br>
+  <label>User Name</label>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="username" class="form-control">
+  </div>
+  <br>
+  <label>Password</label>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="password" class="form-control">
+  </div>
+  <br>
+
+  <label>Gender</label>
+  <div class="foem-group">
+    <input type="radio" value="Male" [(ngModel)]="rbtn" name="r1" checked>Male
+    <input type="radio" value="Female" [(ngModel)]="rbtn" name="r1">Female
+  </div>
+  <br>
+  <label>Mobile</label>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="mobile" class="form-control">
+  </div>
+  <br>
+  <label>City</label>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="city" class="form-control">
+  </div>
+  <label>adrress</label>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="address" class="form-control">
+  </div>
+
+  <br>
+  <div class="row">
+    <div class="col-md-6">
+      <button class="form-control btn-warning" (click)="onSave()">Save</button>
+    </div>
+    <div class="col-md-6">
+      <button class="form-control btn-info" (click)="onCancel()">Already User</button>
+    </div>
+  </div>
+<br>
